@@ -1,5 +1,7 @@
 Service::Application.routes.draw do
 
+  resources :entries
+
   resources :oauth_clients
 
   match '/oauth/test_request',  :to => 'oauth#test_request',  :as => :test_request
